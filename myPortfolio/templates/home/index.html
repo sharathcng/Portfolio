@@ -1,0 +1,349 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="p-1 scrollspy-example" tabindex="0">
+
+    <!-- home section start -->
+    <div id="home" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#home" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#home" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'img/banner.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h6>Hello my name is <br><div class="fs-1">Sharath HG</div></h6>
+              <p>I'm a <span class="typing"></span></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/banner.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h6>Hello my name is <br><div class="fs-1">Sharath HG</div></h6>
+              <p>I'm a <span class="typing-1"></span></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/banner.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h6>Hello my name is <br><div class="fs-1">Sharath HG</div></h6>
+                <p>I'm a <span class="typing-2"></span></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- home section end -->
+
+    <!-- about section start -->
+    <section id="about" class="m-3 border bg-light rounded">
+        <h1 class="text-center">About Me</h1>
+        <h5 class="text-center">--who I am--</h5>
+        <div class="container px-4 ">
+            <div class="row gx-5">
+                <div class="col-md-4 text-end">
+                    <div class="p-3">
+                        <img src="{% static 'img/profile-1.jpeg' %}" style="width: 350px; height: 350px;"
+                            class="img-thumbnail" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-8 my-auto">
+                    <div class="p-3 bg-light">
+                        <h4>
+                            I'm Sharath and I'm a <span class="typing-3"></span>
+                        </h4>
+                        <p class="align-middle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut
+                            voluptatum
+                            eveniet doloremque
+                            autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus
+                            accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam
+                            possimus
+                            veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis
+                            omnis
+                            beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section end -->
+    <!-- services section start -->
+    <section id="services" class="m-3 bg-dark">
+        <h1 class="text-center text-light">My Services</h1>
+        <h5 class="text-center text-light">--what I provide--</h5>
+        <div class="container px-4 mt-5">
+            <div class="row gx-5">
+                <div class="col-md-4 text-center">
+                    <div class="p-3">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Design</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">I design and develope responsive websites from scrath as per client
+                                    requirements with hosting it online.</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-3">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Design</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">I design and develope responsive websites from scrath as per client
+                                    requirements with hosting it online.</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-3">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Design</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">I design and develope responsive websites from scrath as per client
+                                    requirements with hosting it online.</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services section end -->
+
+    <!-- skills section start -->
+    <section id="skills" class="m-3 border bg-light rounded">
+        <h1 class="text-center ">My Skills</h1>
+        <h5 class="text-center ">--what I know--</h5>
+        <div class="container px-4">
+            <div class="row gx-5">
+                <div class="col-md-6 text-center my-auto">
+                    <div class="p-3">
+                        <h3>My creative skills & experiences.</h3>
+                        <p>I have a experience in developing websites using python and Django and also in Windows
+                            Desktop Applications using Universal Windows Platform.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="p-3">
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                <h5>Bootstrap</h3>
+                            </div>
+                            <div class="col-4 fw-bold">
+                                90%
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="progress">
+                                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                <h5>Python</h3>
+                            </div>
+                            <div class="col-4 fw-bold">
+                                75%
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="progress">
+                                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                <h5>C#</h3>
+                            </div>
+                            <div class="col-4 fw-bold">
+                                80%
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                <h5>Django</h3>
+                            </div>
+                            <div class="col-4 fw-bold">
+                                95%
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                <h5>UWP</h3>
+                            </div>
+                            <div class="col-4 fw-bold">
+                                65%
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills section end -->
+
+    <!-- teams section start -->
+    <section id="teams" class="m-3 bg-dark">
+        <h1 class="text-center text-light">My Team</h1>
+        <h5 class="text-center text-light">--who with me--</h5>
+        <div class="container px-4 mt-5">
+            <div class="row gx-5">
+                <div class="col-md-4 text-center">
+                    <div class="p-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{% static 'img/profile-2.jpeg' %}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Raghavendra</h5>
+                                <p class="card-text">Software Developer<br>Java,Fullstack</p>
+                                <a href="#" class="btn btn-primary">Contact him</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{% static 'img/profile-3.jpeg' %}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ganesh</h5>
+                                <p class="card-text">Software Developer<br>Java,Springboot</p>
+                                <a href="#" class="btn btn-primary">Contact him</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{% static 'img/profile-4.jpeg' %}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ashwath</h5>
+                                <p class="card-text">Software Developer<br>Asp.Net,UWP</p>
+                                <a href="#" class="btn btn-primary">Contact him</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- teams section end -->
+
+    <!-- contact section start -->
+    <section id="contact" class="m-3 pb-3 border bg-light rounded">
+        <h1 class="text-center ">Contact Me</h1>
+        <h5 class="text-center ">--get in touch--</h5>
+        <div class="container px-4 mt-5">
+            <div class="row gx-5">
+                <div class="col-md-6 text-center border border-dark rounded">
+                    <div class="p-3">
+                        <h3>Get in Touch</h3>
+                        <p>For more information about me and my services, please contact using below information.</p>
+
+                        <div class="row text-start">
+                            <div class="col-1">
+                                <i class="bi bi-person-fill h2"></i>
+                            </div>
+                            <div class="col-11">
+                                <p><span class="fw-bold">Name</span><br>Sharath HG</p>
+                            </div>
+                        </div>
+
+                        <div class="row text-start">
+                            <div class="col-1">
+                                <i class="bi bi-geo-alt-fill h2"></i>
+                            </div>
+                            <div class="col-11">
+                                <p><span class="fw-bold">Address</span><br>Bengaluru, Karnataka</p>
+                            </div>
+                        </div>
+
+                        <div class="row text-start">
+                            <div class="col-1">
+                                <i class="bi bi-telephone-fill h2"></i>
+                            </div>
+                            <div class="col-11">
+                                <p><span class="fw-bold">Call</span><br>8095908658</p>
+                            </div>
+                        </div>
+
+                        <div class="row text-start">
+                            <div class="col-1">
+                                <i class="bi bi-envelope-fill h2"></i>
+                            </div>
+                            <div class="col-11">
+                                <p><span class="fw-bold">Email</span><br>cngsharath@gmail.com</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <iframe class="col-md-6"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d972.1875070914773!2d77.54655312915412!3d12.923781306563194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e33b6c2298b%3A0x937466b4f1620b96!2s614%2C%2010th%20Cross%20Rd%2C%20Ittamadu%2C%20Bhuvaneshwari%20Nagar%2C%20Banashankari%2C%20Bengaluru%2C%20Karnataka%20560085!5e0!3m2!1sen!2sin!4v1650975011310!5m2!1sen!2sin"
+                    width="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- contact section end -->
+</div>
+
+{% endblock %}
