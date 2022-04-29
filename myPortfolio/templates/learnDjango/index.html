@@ -79,7 +79,7 @@
                                             <div class="text-center">
                                                 <img src="{% static 'img/python/python-3.8.8.png' %}"
                                                     class="img-thumbnail btn" width="50%" height="50%"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleModal" />
+                                                    data-bs-toggle="modal" data-bs-target="#pythonModal" />
                                             </div>
 
                                             <strong>Note* :</strong> Don't forget to checkmark both checkboxes.
@@ -149,25 +149,31 @@
                                             <br>
                                             &nbsp;&nbsp;&nbsp;&nbsp;<strong>Process :</strong> Click on windows search
                                             bar --> Search 'cmd' --> Click on 'Command Promt App'
-                                            <img src="{% static 'img/django/cmd1.png' %}" class="img-thumbnail" />
+                                            <img src="{% static 'img/django/cmd1.png' %}" class="img-thumbnail"
+                                                data-bs-toggle="modal" data-bs-target="#cmd1Modal" />
                                             <br>
                                             2. Move to Desktop location
                                             <br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong><code> cd Desktop</code>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong><code
+                                                class="user-select-all"> cd Desktop</code>
                                             Press enter
                                             <br>
-                                            <img src="{% static 'img/django/cmd2.png' %}" class="img-thumbnail" />
+                                            <img src="{% static 'img/django/cmd2.png' %}" class="img-thumbnail"
+                                                data-bs-toggle="modal" data-bs-target="#cmd2Modal" />
                                             <br>
                                             3. Install Virtualenv
                                             <br>
                                             &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command
-                                                :</strong><code> pip install virtualenv</code> Press enter
+                                                :</strong><code class="user-select-all"> pip install virtualenv</code>
+                                            Press enter
                                             <br>
-                                            <img src="{% static 'img/django/cmd4.png' %}" class="img-thumbnail" />
+                                            <img src="{% static 'img/django/cmd4.png' %}" class="img-thumbnail"
+                                                data-bs-toggle="modal" data-bs-target="#cmd3Modal" />
                                             <hr>
                                             4. If you already installed virtualenv, it will show like this
                                             <br>
-                                            <img src="{% static 'img/django/cmd3.png' %}" class="img-thumbnail" />
+                                            <img src="{% static 'img/django/cmd3.png' %}" class="img-thumbnail"
+                                                data-bs-toggle="modal" data-bs-target="#cmd4Modal" />
                                         </div>
                                     </div>
                                 </div>
@@ -197,7 +203,7 @@
                                             <div class="text-center">
                                                 <img src="{% static 'img/django/folder1.png' %}"
                                                     class="img-thumbnail btn" data-bs-toggle="modal"
-                                                    data-bs-target="#vsCodeModal" />
+                                                    data-bs-target="#folder1Modal" />
                                             </div>
                                             2. Open that folder in VsCode.
                                             <br>
@@ -207,57 +213,61 @@
                                             <div class="text-center">
                                                 <img src="{% static 'img/django/folder2.png' %}"
                                                     class="img-thumbnail btn" data-bs-toggle="modal"
-                                                    data-bs-target="#vsCodeModal" />
+                                                    data-bs-target="#folder2Modal" />
                                             </div>
-                                            3. Once VsCode opens, click on Terminal --> New Terminal
+                                            <div class="text-center">
+                                                <img src="{% static 'img/django/vscode1.png' %}"
+                                                    class="img-thumbnail btn" data-bs-toggle="modal"
+                                                    data-bs-target="#vscode1Modal" />
+                                            </div>
+                                            3. Once VsCode opens, open new terminal
                                             <br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Process :</strong> Right click on Desktop
-                                            --> Click
-                                            on 'New' -->
-                                            Click on
-                                            Folder --> type the name as 'myBlog'
+                                            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Process :</strong>
+                                            click on Terminal --> New Terminal
                                             <br>
                                             <div class="text-center">
                                                 <img src="{% static 'img/django/vscode2.png' %}"
                                                     class="img-thumbnail btn" data-bs-toggle="modal"
-                                                    data-bs-target="#vsCodeModal" />
+                                                    data-bs-target="#vscode2Modal" />
                                             </div>
 
-                                            4. Click on '+' symbol --> then click on Command Prompt --> then Delete
-                                            powershell terminal
+                                            4. Create new command prompt terinal and delete powershell terminal.
+                                            <br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Process :</strong>
+                                            Click on '+' symbol --> click on Command Prompt --> click on delete button
+                                            of powershell terminal
                                             <div class="text-center">
                                                 <img src="{% static 'img/django/vscode3.png' %}"
                                                     class="img-thumbnail btn" data-bs-toggle="modal"
-                                                    data-bs-target="#vsCodeModal" />
+                                                    data-bs-target="#vscode3Modal" />
                                             </div>
                                             <div class="text-center">
                                                 <img src="{% static 'img/django/vscode4.png' %}"
                                                     class="img-thumbnail btn" data-bs-toggle="modal"
-                                                    data-bs-target="#vsCodeModal" />
+                                                    data-bs-target="#vscode4Modal" />
                                             </div>
 
                                             5. Create new virtual environment for this project. (Note* : We need to
                                             create one new virtual environment for each new project.)
                                             <br>
                                             &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong>
-                                            <code>virtualenv blog</code> Press enter
+                                            <code class="user-select-all">virtualenv blog</code> Press enter
                                             <div class="text-center">
                                                 <img src="{% static 'img/django/vscode5.png' %}"
                                                     class="img-thumbnail btn" data-bs-toggle="modal"
-                                                    data-bs-target="#vsCodeModal" />
+                                                    data-bs-target="#vscode5Modal" />
                                             </div>
 
                                             6. Activate virtual environment (Note* : We need to activate this venv,
                                             whenever we start working on this project.)
                                             <br>
                                             &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong>
-                                            <code>blog\Scripts\activate</code> Press enter
+                                            <code class="user-select-all">blog\Scripts\activate</code> Press enter
                                             <div class="text-center">
                                                 <img src="{% static 'img/django/vscode6.png' %}"
                                                     class="img-thumbnail btn" data-bs-toggle="modal"
-                                                    data-bs-target="#vsCodeModal" />
+                                                    data-bs-target="#vscode6Modal" />
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -276,11 +286,12 @@
                                 <div class="accordion-body">
                                     1. Install django using this below command.
                                     <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong> <code>pip install django</code>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong> <code
+                                        class="user-select-all">pip install django</code>
                                     Press enter
                                     <div class="text-center">
                                         <img src="{% static 'img/django/vscode7.png' %}" class="img-thumbnail btn"
-                                            data-bs-toggle="modal" data-bs-target="#vsCodeModal" />
+                                            data-bs-toggle="modal" data-bs-target="#vscode7Modal" />
                                     </div>
 
                                     2. Execute this below command to collect all the packages that we installed for this
@@ -289,11 +300,11 @@
                                     project.
                                     <br>
                                     &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong>
-                                    <code>pip freeze > requirements.txt</code>
+                                    <code class="user-select-all">pip freeze > requirements.txt</code>
                                     Press enter
                                     <div class="text-center">
                                         <img src="{% static 'img/django/vscode8.png' %}" class="img-thumbnail btn"
-                                            data-bs-toggle="modal" data-bs-target="#vsCodeModal" />
+                                            data-bs-toggle="modal" data-bs-target="#vscode8Modal" />
                                     </div>
                                     &nbsp;&nbsp;&nbsp;&nbsp;<strong>More* :</strong> If you share your project with
                                     others, they just need to do two steps.
@@ -302,7 +313,7 @@
                                     prompt.
                                     <br>
                                     &nbsp;&nbsp;&nbsp;&nbsp;2. Run this command
-                                    <code>pip install -r requirements.txt</code>
+                                    <code class="user-select-all">pip install -r requirements.txt</code>
                                     Press enter
                                 </div>
                             </div>
@@ -322,17 +333,18 @@
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    1. Run the command <code> django-admin startproject projectName </code> to create new django
+                    1. Run the command <code class="user-select-all"> django-admin startproject projectName </code> to
+                    create new django
                     project.
                     Remember 'projectName' can only contain letters, numbers and underscore.
 
                     <br>
                     &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command
-                        :</strong><code> django-admin startproject personal_blog </code>
+                        :</strong><code class="user-select-all"> django-admin startproject personal_blog </code>
                     Press enter
                     <div class="text-center">
                         <img src="{% static 'img/django/vscode9.png' %}" class="img-thumbnail btn"
-                            data-bs-toggle="modal" data-bs-target="#vsCodeModal" />
+                            data-bs-toggle="modal" data-bs-target="#vscode9Modal" />
                     </div>
                     In the above picture, you can see new folder has been created with the project name that you have
                     entered. In that folder, another folder has been created with the same name. That folder, in django
@@ -343,15 +355,17 @@
                     <br>
                     &nbsp;&nbsp;&nbsp;&nbsp;For that you need to move inside project folder.
                     <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong><code> cd personal_blog </code> Press enter
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong><code
+                        class="user-select-all"> cd personal_blog </code> Press enter
                     <br>
                     &nbsp;&nbsp;&nbsp;&nbsp;Now execute the project run command.
                     <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong><code> python manage.py runserver </code> Press
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong><code
+                        class="user-select-all"> python manage.py runserver </code> Press
                     enter
                     <div class="text-center">
                         <img src="{% static 'img/django/vscode10.png' %}" class="img-thumbnail btn"
-                            data-bs-toggle="modal" data-bs-target="#vsCodeModal" />
+                            data-bs-toggle="modal" data-bs-target="#vscode10Modal" />
                     </div>
                     3. Click on the link showing in the above picture. Your website will be open in the browser with
                     django
@@ -359,7 +373,7 @@
                     <br>
                     <div class="text-center">
                         <img src="{% static 'img/django/vscode11.png' %}" class="img-thumbnail btn"
-                            data-bs-toggle="modal" data-bs-target="#vsCodeModal" />
+                            data-bs-toggle="modal" data-bs-target="#vscode11Modal" />
                     </div>
                 </div>
             </div>
@@ -368,26 +382,120 @@
 
 
 
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- python modals start -->
+    <div class="modal fade" id="pythonModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <img src="{% static 'img/python/python-3.8.8.png' %}" class="img-thumbnail btn" width="150%" height="150%"
-                data-bs-toggle="modal" data-bs-target="#exampleModal" />
+            <img src="{% static 'img/python/python-3.8.8.png' %}" class="img-thumbnail btn" width="150%"
+                height="150%" />
         </div>
     </div>
+    <!-- python modals start -->
 
+    <!-- vscode modals start -->
     <div class="modal fade" id="vsCodeModal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/vsCode.png' %}" class="img-thumbnail w-100" width="150%" height="150%"
-                data-bs-toggle="modal" data-bs-target="#exampleModal" />
+            <img src="{% static 'img/django/vsCode.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
+        </div>
+    </div>
+    <div class="modal fade" id="vscode1Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered w-100">
+            <img src="{% static 'img/django/vscode1.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
+        </div>
+    </div>
+    <div class="modal fade" id="vscode2Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered w-100">
+            <img src="{% static 'img/django/vscode2.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
+        </div>
+    </div>
+    <div class="modal fade" id="vscode3Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered w-100">
+            <img src="{% static 'img/django/vscode3.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
+        </div>
+    </div>
+    <div class="modal fade" id="vscode4Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered w-100">
+            <img src="{% static 'img/django/vscode4.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
+        </div>
+    </div>
+    <div class="modal fade" id="vscode5Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered w-100">
+            <img src="{% static 'img/django/vscode5.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
+        </div>
+    </div>
+    <div class="modal fade" id="vscode6Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered w-100">
+            <img src="{% static 'img/django/vscode6.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
+        </div>
+    </div>
+    <div class="modal fade" id="vscode7Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered w-100">
+            <img src="{% static 'img/django/vscode7.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
+        </div>
+    </div>
+    <div class="modal fade" id="vscode8Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered w-100">
+            <img src="{% static 'img/django/vscode8.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
+        </div>
+    </div>
+    <div class="modal fade" id="vscode9Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered w-100">
+            <img src="{% static 'img/django/vscode9.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
+        </div>
+    </div>
+    <div class="modal fade" id="vscode10Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered w-100">
+            <img src="{% static 'img/django/vscode10.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
+        </div>
+    </div>
+    <div class="modal fade" id="vscode11Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered w-100">
+            <img src="{% static 'img/django/vscode11.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
         </div>
     </div>
 
-    <div class="modal fade" id="folderModal" tabindex="-1" aria-labelledby="folderModalLabel" aria-hidden="true">
+    <!-- vscode modals start -->
+
+    <!-- folder modals start -->
+    <div class="modal fade" id="folder1Modal" tabindex="-1" aria-labelledby="folderModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/folder1.png' %}" class="img-thumbnail w-100" width="150%" height="150%"
-                data-bs-toggle="modal" data-bs-target="#exampleModal" />
+            <img src="{% static 'img/django/folder1.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
         </div>
     </div>
+    <div class="modal fade" id="folder2Modal" tabindex="-1" aria-labelledby="folderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered w-100">
+            <img src="{% static 'img/django/folder2.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
+        </div>
+    </div>
+    <!-- folder modals start -->
+
+    <!-- cmd modals start -->
+    <div class="modal fade" id="cmd1Modal" tabindex="-1" aria-labelledby="folderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered w-100">
+            <img src="{% static 'img/django/cmd1.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
+        </div>
+    </div>
+
+    <div class="modal fade" id="cmd2Modal" tabindex="-1" aria-labelledby="folderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered w-100">
+            <img src="{% static 'img/django/cmd2.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
+        </div>
+    </div>
+
+    <div class="modal fade" id="cmd3Modal" tabindex="-1" aria-labelledby="folderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered w-100">
+            <img src="{% static 'img/django/cmd3.png' %}" class="img-thumbnail w-100" />
+        </div>
+    </div>
+
+    <div class="modal fade" id="cmd4Modal" tabindex="-1" aria-labelledby="folderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered w-100">
+            <img src="{% static 'img/django/cmd4.png' %}" class="img-thumbnail w-100" />
+        </div>
+    </div>
+    <!-- cmd modals end -->
+
+
+
+
 
     {% endblock %}
