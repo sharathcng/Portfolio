@@ -2,500 +2,558 @@
 {% load static %}
 {% block body %}
 
-<div class="container">
-    <h1 class="text-light text-center">Welcome to the world of Django</h1>
 
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    Introduction to Django Framework
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>Django</strong> is a high-level <strong>Python web framework</strong> that encourages rapid
-                    development and clean, pragmatic
-                    design. Built by experienced developers, it takes care of much of the hassle of web development, so
-                    you can focus on writing your app without needing to reinvent the wheel. <strong>It’s free and open
-                        source.</strong>
-                    <hr>
-                    <strong>Imp* :</strong> Why we choose Django? <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Ridiculously fast</strong>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Django
-                        was designed to help developers take applications from concept to completion as quickly as
-                        possible.</p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Reassuringly
-                        secure</strong>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Django
-                        was designed to help developers take applications from concept to completion as quickly as
-                        possible.</p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Exceedingly
-                        scalable</strong>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Django was designed to help
-                        developers take applications from concept to completion as quickly as
-                        possible.</p>
-                </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-3 my-auto">
+                <img src="{% static 'img/django/djangoLogo.png' %}" width="75%" height="75%" />
+            </div>
+            <div class="col-lg-8 col-6 my-auto">
+                <div class="fs-1 text-light text-center my-auto">Django Framework</div>
+            </div>
+            <div class="col-lg-2 col-3 my-auto">
+                <img src="{% static 'img/django/djangoLogo.png' %}" width="75%" height="75%" />
             </div>
         </div>
-        <hr class="text-light">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Project Setup - Creating Project Environment
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
 
-                    <div class="accordion" id="accordionExample1">
+        <div class="text-center">
+            <img class="img-thumbnail" src="{% static 'img/django/mvtModel.png' %}" style="max-height: 50vh;" />
+        </div>
 
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne1">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
-                                    <strong>Step 1:</strong> Install Python
-                                </button>
-                            </h2>
-                            <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne1"
-                                data-bs-parent="#accordionExample1">
-                                <div class="accordion-body">
-                                    <div class="row">
-                                        <div class="col-md border border-dark rounded">
-                                            <p>
-                                                Python is a programming language that lets you work quickly
-                                                and integrate systems more effectively.
-                                            </p>
-                                            Click on this
-                                            <a
-                                                href="https://www.python.org/ftp/python/3.8.8/python-3.8.8-amd64.exe">link</a>
-                                            to <strong>download</strong> python. Double click on downloaded file to
-                                            install python.
-                                            <br>
-                                            <div class="text-center">
-                                                <img src="{% static 'img/python/python-3.8.8.png' %}"
-                                                    class="img-thumbnail btn" width="50%" height="50%"
-                                                    data-bs-toggle="modal" data-bs-target="#pythonModal" />
-                                            </div>
-
-                                            <strong>Note* :</strong> Don't forget to checkmark both checkboxes.
-                                            <br>
-                                            <strong>More* :</strong> You can download the latest version of python from
-                                            <a href="https://www.python.org/downloads/">here.</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne1">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
-                                    <strong>Step 2:</strong> Install Visual Studio Code
-                                </button>
-                            </h2>
-                            <div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingOne1"
-                                data-bs-parent="#accordionExample1">
-                                <div class="accordion-body">
-                                    <div class="row">
-                                        <div class="col-md border border-dark rounded">
-                                            <p>Visual Studio Code is a lightweight but powerful source code editor which
-                                                runs on your desktop and is available for Windows, macOS and Linux. It
-                                                comes with built-in support for JavaScript, TypeScript and Node.js and
-                                                has a rich ecosystem of extensions for other languages (such as C++, C#,
-                                                Java, Python, PHP, Go) and runtimes (such as .NET and Unity).</p>
-                                            1. Click on this
-                                            <a href="https://code.visualstudio.com/download">link</a>
-                                            to download <strong> Visual Studio Code.</strong>
-                                            Download according to your operating system(OS).
-                                            <br>
-                                            <div class="text-center">
-                                                <img src="{% static 'img/django/vsCode.png' %}"
-                                                    class="img-thumbnail btn" width="75%" height="65%"
-                                                    data-bs-toggle="modal" data-bs-target="#vsCodeModal" />
-                                            </div>
-                                            2. Double click on downloaded file to install Visual Studio Code.
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo1">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree1" aria-expanded="false"
-                                    aria-controls="collapseThree1">
-                                    <strong>Step 3: </strong> Install Virtualenv
-                                </button>
-                            </h2>
-                            <div id="collapseThree1" class="accordion-collapse collapse" aria-labelledby="headingTwo1"
-                                data-bs-parent="#accordionExample1">
-                                <div class="accordion-body">
-                                    <div class="row">
-                                        <div class="col-md border border-dark rounded">
-                                            <p><strong>Virtualenv</strong> is used to manage Python packages for
-                                                different projects.
-                                                Using virtualenv allows you to avoid installing Python packages globally
-                                                which could break system tools or other projects.</p>
-
-                                            1. Open Command Prompt
-                                            <br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Process :</strong> Click on windows search
-                                            bar --> Search 'cmd' --> Click on 'Command Promt App'
-                                            <img src="{% static 'img/django/cmd1.png' %}" class="img-thumbnail"
-                                                data-bs-toggle="modal" data-bs-target="#cmd1Modal" />
-                                            <br>
-                                            2. Move to Desktop location
-                                            <br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong><code
-                                                class="user-select-all"> cd Desktop</code>
-                                            Press enter
-                                            <br>
-                                            <img src="{% static 'img/django/cmd2.png' %}" class="img-thumbnail"
-                                                data-bs-toggle="modal" data-bs-target="#cmd2Modal" />
-                                            <br>
-                                            3. Install Virtualenv
-                                            <br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command
-                                                :</strong><code class="user-select-all"> pip install virtualenv</code>
-                                            Press enter
-                                            <br>
-                                            <img src="{% static 'img/django/cmd4.png' %}" class="img-thumbnail"
-                                                data-bs-toggle="modal" data-bs-target="#cmd3Modal" />
-                                            <hr>
-                                            4. If you already installed virtualenv, it will show like this
-                                            <br>
-                                            <img src="{% static 'img/django/cmd3.png' %}" class="img-thumbnail"
-                                                data-bs-toggle="modal" data-bs-target="#cmd4Modal" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree1">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour1" aria-expanded="false" aria-controls="collapseFour1">
-                                    <strong>Step 4: </strong> Starting New Project (Ex: myBlog)
-                                </button>
-                            </h2>
-                            <div id="collapseFour1" class="accordion-collapse collapse" aria-labelledby="headingThree1"
-                                data-bs-parent="#accordionExample1">
-                                <div class="accordion-body">
-                                    <div class="row">
-                                        <div class="col-md border border-dark rounded">
-                                            1. Create one folder on desktop with the name 'myBlog'.
-                                            <br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Process :</strong> Right click on Desktop
-                                            --> Click
-                                            on 'New' -->
-                                            Click on
-                                            Folder --> type the name as 'myBlog'
-                                            <br>
-                                            <div class="text-center">
-                                                <img src="{% static 'img/django/folder1.png' %}"
-                                                    class="img-thumbnail btn" data-bs-toggle="modal"
-                                                    data-bs-target="#folder1Modal" />
-                                            </div>
-                                            2. Open that folder in VsCode.
-                                            <br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Process :</strong> Right click on that
-                                            folder -->
-                                            Click on 'open with vscode'.
-                                            <div class="text-center">
-                                                <img src="{% static 'img/django/folder2.png' %}"
-                                                    class="img-thumbnail btn" data-bs-toggle="modal"
-                                                    data-bs-target="#folder2Modal" />
-                                            </div>
-                                            <div class="text-center">
-                                                <img src="{% static 'img/django/vscode1.png' %}"
-                                                    class="img-thumbnail btn" data-bs-toggle="modal"
-                                                    data-bs-target="#vscode1Modal" />
-                                            </div>
-                                            3. Once VsCode opens, open new terminal
-                                            <br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Process :</strong>
-                                            click on Terminal --> New Terminal
-                                            <br>
-                                            <div class="text-center">
-                                                <img src="{% static 'img/django/vscode2.png' %}"
-                                                    class="img-thumbnail btn" data-bs-toggle="modal"
-                                                    data-bs-target="#vscode2Modal" />
-                                            </div>
-
-                                            4. Create new command prompt terinal and delete powershell terminal.
-                                            <br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Process :</strong>
-                                            Click on '+' symbol --> click on Command Prompt --> click on delete button
-                                            of powershell terminal
-                                            <div class="text-center">
-                                                <img src="{% static 'img/django/vscode3.png' %}"
-                                                    class="img-thumbnail btn" data-bs-toggle="modal"
-                                                    data-bs-target="#vscode3Modal" />
-                                            </div>
-                                            <div class="text-center">
-                                                <img src="{% static 'img/django/vscode4.png' %}"
-                                                    class="img-thumbnail btn" data-bs-toggle="modal"
-                                                    data-bs-target="#vscode4Modal" />
-                                            </div>
-
-                                            5. Create new virtual environment for this project. (Note* : We need to
-                                            create one new virtual environment for each new project.)
-                                            <br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong>
-                                            <code class="user-select-all">virtualenv blog</code> Press enter
-                                            <div class="text-center">
-                                                <img src="{% static 'img/django/vscode5.png' %}"
-                                                    class="img-thumbnail btn" data-bs-toggle="modal"
-                                                    data-bs-target="#vscode5Modal" />
-                                            </div>
-
-                                            6. Activate virtual environment (Note* : We need to activate this venv,
-                                            whenever we start working on this project.)
-                                            <br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong>
-                                            <code class="user-select-all">blog\Scripts\activate</code> Press enter
-                                            <div class="text-center">
-                                                <img src="{% static 'img/django/vscode6.png' %}"
-                                                    class="img-thumbnail btn" data-bs-toggle="modal"
-                                                    data-bs-target="#vscode6Modal" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree1">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive1" aria-expanded="false" aria-controls="collapseFive1">
-                                    <strong>Step 5: </strong> Install Django
-                                </button>
-                            </h2>
-                            <div id="collapseFive1" class="accordion-collapse collapse" aria-labelledby="headingThree1"
-                                data-bs-parent="#accordionExample1">
-                                <div class="accordion-body">
-                                    1. Install django using this below command.
-                                    <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong> <code
-                                        class="user-select-all">pip install django</code>
-                                    Press enter
-                                    <div class="text-center">
-                                        <img src="{% static 'img/django/vscode7.png' %}" class="img-thumbnail btn"
-                                            data-bs-toggle="modal" data-bs-target="#vscode7Modal" />
-                                    </div>
-
-                                    2. Execute this below command to collect all the packages that we installed for this
-                                    project. So this will help us whenever we share this project to others to work in a
-                                    team. They can easily install exact version of the packages we installed for this
-                                    project.
-                                    <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong>
-                                    <code class="user-select-all">pip freeze > requirements.txt</code>
-                                    Press enter
-                                    <div class="text-center">
-                                        <img src="{% static 'img/django/vscode8.png' %}" class="img-thumbnail btn"
-                                            data-bs-toggle="modal" data-bs-target="#vscode8Modal" />
-                                    </div>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>More* :</strong> If you share your project with
-                                    others, they just need to do two steps.
-                                    <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;1. Download your project, go to project folder, open command
-                                    prompt.
-                                    <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;2. Run this command
-                                    <code class="user-select-all">pip install -r requirements.txt</code>
-                                    Press enter
-                                </div>
-                            </div>
-                        </div>
+        <div class="accordion mx-5 mt-4" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Introduction to Django Framework
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Django</strong> is a high-level <strong>Python web framework</strong> that encourages
+                        rapid
+                        development and clean, pragmatic
+                        design. Built by experienced developers, it takes care of much of the hassle of web development,
+                        so
+                        you can focus on writing your app without needing to reinvent the wheel. <strong>It’s free and
+                            open
+                            source.</strong>
+                        <hr>
+                        <strong>Imp* :</strong> Why we choose Django? <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Ridiculously
+                            fast</strong>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Django
+                            was designed to help developers take applications from concept to completion as quickly as
+                            possible.</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Reassuringly
+                            secure</strong>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Django
+                            was designed to help developers take applications from concept to completion as quickly as
+                            possible.</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Exceedingly
+                            scalable</strong>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Django was designed to help
+                            developers take applications from concept to completion as quickly as
+                            possible.</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <hr class="text-light">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Creating New Project
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    1. Run the command <code class="user-select-all"> django-admin startproject projectName </code> to
-                    create new django
-                    project.
-                    Remember 'projectName' can only contain letters, numbers and underscore.
+            <hr class="text-light">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Project Setup - Creating Project Environment
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
 
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command
-                        :</strong><code class="user-select-all"> django-admin startproject personal_blog </code>
-                    Press enter
-                    <div class="text-center">
-                        <img src="{% static 'img/django/vscode9.png' %}" class="img-thumbnail btn"
-                            data-bs-toggle="modal" data-bs-target="#vscode9Modal" />
+                        <div class="accordion" id="accordionExample1">
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne1" aria-expanded="false"
+                                        aria-controls="collapseOne1">
+                                        <strong>Step 1:</strong> Install Python
+                                    </button>
+                                </h2>
+                                <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne1"
+                                    data-bs-parent="#accordionExample1">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-md border border-dark rounded">
+                                                <p>
+                                                    Python is a programming language that lets you work quickly
+                                                    and integrate systems more effectively.
+                                                </p>
+                                                Click on this
+                                                <a
+                                                    href="https://www.python.org/ftp/python/3.8.8/python-3.8.8-amd64.exe">link</a>
+                                                to <strong>download</strong> python. Double click on downloaded file to
+                                                install python.
+                                                <br>
+                                                <div class="text-center">
+                                                    <img src="{% static 'img/python/python-3.8.8.png' %}"
+                                                        class="img-thumbnail btn" width="50%" height="50%"
+                                                        data-bs-toggle="modal" data-bs-target="#pythonModal" />
+                                                </div>
+
+                                                <strong>Note* :</strong> Don't forget to checkmark both checkboxes.
+                                                <br>
+                                                <strong>More* :</strong> You can download the latest version of python
+                                                from
+                                                <a href="https://www.python.org/downloads/">here.</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo1" aria-expanded="false"
+                                        aria-controls="collapseTwo1">
+                                        <strong>Step 2:</strong> Install Visual Studio Code
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingOne1"
+                                    data-bs-parent="#accordionExample1">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-md border border-dark rounded">
+                                                <p>Visual Studio Code is a lightweight but powerful source code editor
+                                                    which
+                                                    runs on your desktop and is available for Windows, macOS and Linux.
+                                                    It
+                                                    comes with built-in support for JavaScript, TypeScript and Node.js
+                                                    and
+                                                    has a rich ecosystem of extensions for other languages (such as C++,
+                                                    C#,
+                                                    Java, Python, PHP, Go) and runtimes (such as .NET and Unity).</p>
+                                                1. Click on this
+                                                <a href="https://code.visualstudio.com/download">link</a>
+                                                to download <strong> Visual Studio Code.</strong>
+                                                Download according to your operating system(OS).
+                                                <br>
+                                                <div class="text-center">
+                                                    <img src="{% static 'img/django/vsCode.png' %}"
+                                                        class="img-thumbnail btn" width="75%" height="65%"
+                                                        data-bs-toggle="modal" data-bs-target="#vsCodeModal" />
+                                                </div>
+                                                2. Double click on downloaded file to install Visual Studio Code.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree1" aria-expanded="false"
+                                        aria-controls="collapseThree1">
+                                        <strong>Step 3: </strong> Install Virtualenv
+                                    </button>
+                                </h2>
+                                <div id="collapseThree1" class="accordion-collapse collapse"
+                                    aria-labelledby="headingTwo1" data-bs-parent="#accordionExample1">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-md border border-dark rounded">
+                                                <p><strong>Virtualenv</strong> is used to manage Python packages for
+                                                    different projects.
+                                                    Using virtualenv allows you to avoid installing Python packages
+                                                    globally
+                                                    which could break system tools or other projects.</p>
+
+                                                1. Open Command Prompt
+                                                <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<strong>Process :</strong> Click on windows
+                                                search
+                                                bar --> Search 'cmd' --> Click on 'Command Promt App'
+                                                <img src="{% static 'img/django/cmd1.png' %}" class="img-thumbnail"
+                                                    data-bs-toggle="modal" data-bs-target="#cmd1Modal" />
+                                                <br>
+                                                2. Move to Desktop location
+                                                <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong><code
+                                                    class="user-select-all"> cd Desktop</code>
+                                                Press enter
+                                                <br>
+                                                <img src="{% static 'img/django/cmd2.png' %}" class="img-thumbnail"
+                                                    data-bs-toggle="modal" data-bs-target="#cmd2Modal" />
+                                                <br>
+                                                3. Install Virtualenv
+                                                <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command
+                                                    :</strong><code
+                                                    class="user-select-all"> pip install virtualenv</code>
+                                                Press enter
+                                                <br>
+                                                <img src="{% static 'img/django/cmd4.png' %}" class="img-thumbnail"
+                                                    data-bs-toggle="modal" data-bs-target="#cmd3Modal" />
+                                                <hr>
+                                                4. If you already installed virtualenv, it will show like this
+                                                <br>
+                                                <img src="{% static 'img/django/cmd3.png' %}" class="img-thumbnail"
+                                                    data-bs-toggle="modal" data-bs-target="#cmd4Modal" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour1" aria-expanded="false"
+                                        aria-controls="collapseFour1">
+                                        <strong>Step 4: </strong> Starting New Project (Ex: myBlog)
+                                    </button>
+                                </h2>
+                                <div id="collapseFour1" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree1" data-bs-parent="#accordionExample1">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-md border border-dark rounded">
+                                                1. Create one folder on desktop with the name 'myBlog'.
+                                                <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<strong>Process :</strong> Right click on
+                                                Desktop
+                                                --> Click
+                                                on 'New' -->
+                                                Click on
+                                                Folder --> type the name as 'myBlog'
+                                                <br>
+                                                <div class="text-center">
+                                                    <img src="{% static 'img/django/folder1.png' %}"
+                                                        class="img-thumbnail btn" data-bs-toggle="modal"
+                                                        data-bs-target="#folder1Modal" />
+                                                </div>
+                                                2. Open that folder in VsCode.
+                                                <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<strong>Process :</strong> Right click on that
+                                                folder -->
+                                                Click on 'open with vscode'.
+                                                <div class="text-center">
+                                                    <img src="{% static 'img/django/folder2.png' %}"
+                                                        class="img-thumbnail btn" data-bs-toggle="modal"
+                                                        data-bs-target="#folder2Modal" />
+                                                </div>
+                                                <div class="text-center">
+                                                    <img src="{% static 'img/django/vscode1.png' %}"
+                                                        class="img-thumbnail btn" data-bs-toggle="modal"
+                                                        data-bs-target="#vscode1Modal" />
+                                                </div>
+                                                3. Once VsCode opens, open new terminal
+                                                <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<strong>Process :</strong>
+                                                click on Terminal --> New Terminal
+                                                <br>
+                                                <div class="text-center">
+                                                    <img src="{% static 'img/django/vscode2.png' %}"
+                                                        class="img-thumbnail btn" data-bs-toggle="modal"
+                                                        data-bs-target="#vscode2Modal" />
+                                                </div>
+
+                                                4. Create new command prompt terinal and delete powershell terminal.
+                                                <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<strong>Process :</strong>
+                                                Click on '+' symbol --> click on Command Prompt --> click on delete
+                                                button
+                                                of powershell terminal
+                                                <div class="text-center">
+                                                    <img src="{% static 'img/django/vscode3.png' %}"
+                                                        class="img-thumbnail btn" data-bs-toggle="modal"
+                                                        data-bs-target="#vscode3Modal" />
+                                                </div>
+                                                <div class="text-center">
+                                                    <img src="{% static 'img/django/vscode4.png' %}"
+                                                        class="img-thumbnail btn" data-bs-toggle="modal"
+                                                        data-bs-target="#vscode4Modal" />
+                                                </div>
+
+                                                5. Create new virtual environment for this project. (Note* : We need to
+                                                create one new virtual environment for each new project.)
+                                                <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong>
+                                                <code class="user-select-all">virtualenv blog</code> Press enter
+                                                <div class="text-center">
+                                                    <img src="{% static 'img/django/vscode5.png' %}"
+                                                        class="img-thumbnail btn" data-bs-toggle="modal"
+                                                        data-bs-target="#vscode5Modal" />
+                                                </div>
+
+                                                6. Activate virtual environment (Note* : We need to activate this venv,
+                                                whenever we start working on this project.)
+                                                <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong>
+                                                <code class="user-select-all">blog\Scripts\activate</code> Press enter
+                                                <div class="text-center">
+                                                    <img src="{% static 'img/django/vscode6.png' %}"
+                                                        class="img-thumbnail btn" data-bs-toggle="modal"
+                                                        data-bs-target="#vscode6Modal" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive1" aria-expanded="false"
+                                        aria-controls="collapseFive1">
+                                        <strong>Step 5: </strong> Install Django
+                                    </button>
+                                </h2>
+                                <div id="collapseFive1" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree1" data-bs-parent="#accordionExample1">
+                                    <div class="accordion-body">
+                                        1. Install django using this below command.
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong> <code
+                                            class="user-select-all">pip install django</code>
+                                        Press enter
+                                        <div class="text-center">
+                                            <img src="{% static 'img/django/vscode7.png' %}" class="img-thumbnail btn"
+                                                data-bs-toggle="modal" data-bs-target="#vscode7Modal" />
+                                        </div>
+
+                                        2. Execute this below command to collect all the packages that we installed for
+                                        this
+                                        project. So this will help us whenever we share this project to others to work
+                                        in a
+                                        team. They can easily install exact version of the packages we installed for
+                                        this
+                                        project.
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong>
+                                        <code class="user-select-all">pip freeze > requirements.txt</code>
+                                        Press enter
+                                        <div class="text-center">
+                                            <img src="{% static 'img/django/vscode8.png' %}" class="img-thumbnail btn"
+                                                data-bs-toggle="modal" data-bs-target="#vscode8Modal" />
+                                        </div>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<strong>More* :</strong> If you share your project with
+                                        others, they just need to do two steps.
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;1. Download your project, go to project folder, open
+                                        command
+                                        prompt.
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;2. Run this command
+                                        <code class="user-select-all">pip install -r requirements.txt</code>
+                                        Press enter
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    In the above picture, you can see new folder has been created with the project name that you have
-                    entered. In that folder, another folder has been created with the same name. That folder, in django
-                    we
-                    call it as 'app'. It includes 5 files, that we will see in the next section.
-                    <br>
-                    2. Now run your first django project.
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;For that you need to move inside project folder.
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong><code
-                        class="user-select-all"> cd personal_blog </code> Press enter
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;Now execute the project run command.
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong><code
-                        class="user-select-all"> python manage.py runserver </code> Press
-                    enter
-                    <div class="text-center">
-                        <img src="{% static 'img/django/vscode10.png' %}" class="img-thumbnail btn"
-                            data-bs-toggle="modal" data-bs-target="#vscode10Modal" />
-                    </div>
-                    3. Click on the link showing in the above picture. Your website will be open in the browser with
-                    django
-                    startup page.
-                    <br>
-                    <div class="text-center">
-                        <img src="{% static 'img/django/vscode11.png' %}" class="img-thumbnail btn"
-                            data-bs-toggle="modal" data-bs-target="#vscode11Modal" />
+                </div>
+            </div>
+            <hr class="text-light">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Creating New Project
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        1. Run the command <code class="user-select-all"> django-admin startproject projectName </code>
+                        to
+                        create new django
+                        project.
+                        Remember 'projectName' can only contain letters, numbers and underscore.
+
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command
+                            :</strong><code class="user-select-all"> django-admin startproject personal_blog </code>
+                        Press enter
+                        <div class="text-center">
+                            <img src="{% static 'img/django/vscode9.png' %}" class="img-thumbnail btn"
+                                data-bs-toggle="modal" data-bs-target="#vscode9Modal" />
+                        </div>
+                        In the above picture, you can see new folder has been created with the project name that you
+                        have
+                        entered. In that folder, another folder has been created with the same name. That folder, in
+                        django
+                        we
+                        call it as 'app'. It includes 5 files, that we will see in the next section.
+                        <br>
+                        2. Now run your first django project.
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;For that you need to move inside project folder.
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong><code
+                            class="user-select-all"> cd personal_blog </code> Press enter
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Now execute the project run command.
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<strong>Command :</strong><code
+                            class="user-select-all"> python manage.py runserver </code> Press
+                        enter
+                        <div class="text-center">
+                            <img src="{% static 'img/django/vscode10.png' %}" class="img-thumbnail btn"
+                                data-bs-toggle="modal" data-bs-target="#vscode10Modal" />
+                        </div>
+                        3. Click on the link showing in the above picture. Your website will be open in the browser with
+                        django
+                        startup page.
+                        <br>
+                        <div class="text-center">
+                            <img src="{% static 'img/django/vscode11.png' %}" class="img-thumbnail btn"
+                                data-bs-toggle="modal" data-bs-target="#vscode11Modal" />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- python modals start -->
+        <div class="modal fade" id="pythonModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <img src="{% static 'img/python/python-3.8.8.png' %}" class="img-thumbnail btn" width="150%"
+                    height="150%" />
+            </div>
+        </div>
+        <!-- python modals start -->
+
+        <!-- vscode modals start -->
+        <div class="modal fade" id="vsCodeModal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered w-100">
+                <img src="{% static 'img/django/vsCode.png' %}" class="img-thumbnail w-100" width="150%"
+                    height="150%" />
+            </div>
+        </div>
+        <div class="modal fade" id="vscode1Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered w-100">
+                <img src="{% static 'img/django/vscode1.png' %}" class="img-thumbnail w-100" width="150%"
+                    height="150%" />
+            </div>
+        </div>
+        <div class="modal fade" id="vscode2Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered w-100">
+                <img src="{% static 'img/django/vscode2.png' %}" class="img-thumbnail w-100" width="150%"
+                    height="150%" />
+            </div>
+        </div>
+        <div class="modal fade" id="vscode3Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered w-100">
+                <img src="{% static 'img/django/vscode3.png' %}" class="img-thumbnail w-100" width="150%"
+                    height="150%" />
+            </div>
+        </div>
+        <div class="modal fade" id="vscode4Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered w-100">
+                <img src="{% static 'img/django/vscode4.png' %}" class="img-thumbnail w-100" width="150%"
+                    height="150%" />
+            </div>
+        </div>
+        <div class="modal fade" id="vscode5Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered w-100">
+                <img src="{% static 'img/django/vscode5.png' %}" class="img-thumbnail w-100" width="150%"
+                    height="150%" />
+            </div>
+        </div>
+        <div class="modal fade" id="vscode6Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered w-100">
+                <img src="{% static 'img/django/vscode6.png' %}" class="img-thumbnail w-100" width="150%"
+                    height="150%" />
+            </div>
+        </div>
+        <div class="modal fade" id="vscode7Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered w-100">
+                <img src="{% static 'img/django/vscode7.png' %}" class="img-thumbnail w-100" width="150%"
+                    height="150%" />
+            </div>
+        </div>
+        <div class="modal fade" id="vscode8Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered w-100">
+                <img src="{% static 'img/django/vscode8.png' %}" class="img-thumbnail w-100" width="150%"
+                    height="150%" />
+            </div>
+        </div>
+        <div class="modal fade" id="vscode9Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered w-100">
+                <img src="{% static 'img/django/vscode9.png' %}" class="img-thumbnail w-100" width="150%"
+                    height="150%" />
+            </div>
+        </div>
+        <div class="modal fade" id="vscode10Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered w-100">
+                <img src="{% static 'img/django/vscode10.png' %}" class="img-thumbnail w-100" width="150%"
+                    height="150%" />
+            </div>
+        </div>
+        <div class="modal fade" id="vscode11Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered w-100">
+                <img src="{% static 'img/django/vscode11.png' %}" class="img-thumbnail w-100" width="150%"
+                    height="150%" />
+            </div>
+        </div>
+
+        <!-- vscode modals start -->
+
+        <!-- folder modals start -->
+        <div class="modal fade" id="folder1Modal" tabindex="-1" aria-labelledby="folderModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered w-100">
+                <img src="{% static 'img/django/folder1.png' %}" class="img-thumbnail w-100" width="150%"
+                    height="150%" />
+            </div>
+        </div>
+        <div class="modal fade" id="folder2Modal" tabindex="-1" aria-labelledby="folderModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered w-100">
+                <img src="{% static 'img/django/folder2.png' %}" class="img-thumbnail w-100" width="150%"
+                    height="150%" />
+            </div>
+        </div>
+        <!-- folder modals start -->
+
+        <!-- cmd modals start -->
+        <div class="modal fade" id="cmd1Modal" tabindex="-1" aria-labelledby="folderModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered w-100">
+                <img src="{% static 'img/django/cmd1.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
+            </div>
+        </div>
+
+        <div class="modal fade" id="cmd2Modal" tabindex="-1" aria-labelledby="folderModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered w-100">
+                <img src="{% static 'img/django/cmd2.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
+            </div>
+        </div>
+
+        <div class="modal fade" id="cmd3Modal" tabindex="-1" aria-labelledby="folderModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered w-100">
+                <img src="{% static 'img/django/cmd3.png' %}" class="img-thumbnail w-100" />
+            </div>
+        </div>
+
+        <div class="modal fade" id="cmd4Modal" tabindex="-1" aria-labelledby="folderModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered w-100">
+                <img src="{% static 'img/django/cmd4.png' %}" class="img-thumbnail w-100" />
+            </div>
+        </div>
+        <!-- cmd modals end -->
+
     </div>
 
 
 
-    <!-- python modals start -->
-    <div class="modal fade" id="pythonModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <img src="{% static 'img/python/python-3.8.8.png' %}" class="img-thumbnail btn" width="150%"
-                height="150%" />
-        </div>
-    </div>
-    <!-- python modals start -->
-
-    <!-- vscode modals start -->
-    <div class="modal fade" id="vsCodeModal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/vsCode.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
-        </div>
-    </div>
-    <div class="modal fade" id="vscode1Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/vscode1.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
-        </div>
-    </div>
-    <div class="modal fade" id="vscode2Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/vscode2.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
-        </div>
-    </div>
-    <div class="modal fade" id="vscode3Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/vscode3.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
-        </div>
-    </div>
-    <div class="modal fade" id="vscode4Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/vscode4.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
-        </div>
-    </div>
-    <div class="modal fade" id="vscode5Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/vscode5.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
-        </div>
-    </div>
-    <div class="modal fade" id="vscode6Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/vscode6.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
-        </div>
-    </div>
-    <div class="modal fade" id="vscode7Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/vscode7.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
-        </div>
-    </div>
-    <div class="modal fade" id="vscode8Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/vscode8.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
-        </div>
-    </div>
-    <div class="modal fade" id="vscode9Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/vscode9.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
-        </div>
-    </div>
-    <div class="modal fade" id="vscode10Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/vscode10.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
-        </div>
-    </div>
-    <div class="modal fade" id="vscode11Modal" tabindex="-1" aria-labelledby="vsCodeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/vscode11.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
-        </div>
-    </div>
-
-    <!-- vscode modals start -->
-
-    <!-- folder modals start -->
-    <div class="modal fade" id="folder1Modal" tabindex="-1" aria-labelledby="folderModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/folder1.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
-        </div>
-    </div>
-    <div class="modal fade" id="folder2Modal" tabindex="-1" aria-labelledby="folderModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/folder2.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
-        </div>
-    </div>
-    <!-- folder modals start -->
-
-    <!-- cmd modals start -->
-    <div class="modal fade" id="cmd1Modal" tabindex="-1" aria-labelledby="folderModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/cmd1.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
-        </div>
-    </div>
-
-    <div class="modal fade" id="cmd2Modal" tabindex="-1" aria-labelledby="folderModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/cmd2.png' %}" class="img-thumbnail w-100" width="150%" height="150%" />
-        </div>
-    </div>
-
-    <div class="modal fade" id="cmd3Modal" tabindex="-1" aria-labelledby="folderModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/cmd3.png' %}" class="img-thumbnail w-100" />
-        </div>
-    </div>
-
-    <div class="modal fade" id="cmd4Modal" tabindex="-1" aria-labelledby="folderModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-100">
-            <img src="{% static 'img/django/cmd4.png' %}" class="img-thumbnail w-100" />
-        </div>
-    </div>
-    <!-- cmd modals end -->
 
 
+{% endblock %}
 
-
-
-    {% endblock %}
